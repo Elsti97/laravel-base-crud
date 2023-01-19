@@ -14,17 +14,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-
-        // $comics = Comic::All();
-        $comics = Comic::orderBy('id', 'desc')->paginate(4);
-
-        $data = [
-            'comics' => $comics
-        ];
-
-        // dd($data);
-
-        return view('comic', $data );
+        //
     }
 
     /**
@@ -50,7 +40,6 @@ class ComicController extends Controller
         $new_record->fill($data);
         $new_record->save();
 
-        // return redirect()->route('comics.show', ['comic' => $new_record->id]);
         return redirect()->route('home');
     }
 
@@ -63,7 +52,7 @@ class ComicController extends Controller
     public function show($id)
     {
         $comics = Comic::findOrFail($id);
-        return view('comic.store', compact('comics'));
+        return view('comic', compact('comics'));
     }
 
     /**

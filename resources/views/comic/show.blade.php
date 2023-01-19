@@ -6,6 +6,7 @@
         <p>
             {{$comics->description}}
         </p>
+        <img src="{{ $comics['thumb'] }}" alt="">
     </div>
 
 @endsection

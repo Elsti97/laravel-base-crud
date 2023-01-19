@@ -7,7 +7,7 @@
 
     <h1 class="text-center p-4">Create New Comic</h1>
 
-    <form method="POST" action="{{route('comics.comic')}}">
+    <form method="POST" action="{{route('comic.store')}}">
 
         @csrf
 
