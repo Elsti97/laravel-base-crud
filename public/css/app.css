@@ -1,0 +1,235 @@
+.space-between-header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+
+  .logo-header {
+    margin: auto .5rem;
+  }
+
+  .ul-header {
+    align-self: center;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .ul-header li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 3rem .5rem;
+  }
+
+  .active {
+    color: #2F82F9;
+    border-bottom: 5px solid #2F82F9;
+  }
+
+  .ul-header a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .jumbon {
+    background-image: url('../images/jumbotron.jpg');
+    background-size: cover;
+    height: 25rem;
+  }.width-80-footer{
+    width: 80%;
+    margin: auto;
+  }
+
+  .bg-footer{
+    background: url('../images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .space-between-footer{
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .h3-footer{
+    color: white;
+  }
+
+  .flex-footer{
+    display: flex;
+  }
+
+  .ul-footer{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .ul-footer li{
+    color: #959595;
+    list-style: none;
+    font-size: .9rem;
+    line-height: 1.5rem;
+  }
+
+  .big-logo{
+    background-image: url('../images/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+  }
+
+  .bg-footer-down{
+    background-color: #303030;
+  }
+
+  .width-80-b{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-center-b{
+    display: flex;
+    align-items: center;
+  }
+
+  .button-iscr{
+    border: 2px solid #0282F9;
+    background-color: #303030;
+    color: white;
+    margin: 2rem 0;
+    padding: 1rem ;
+  }
+
+  .padding-l-1 > *{
+    padding-left: 1rem;
+  }
+
+  .padding-l-1 h2{
+    color: #0282F9;
+  }.black-row {
+    color: white;
+    background-color: #1c1c1c;
+    padding: 1rem;
+  }
+
+  .p-relative{
+    position: relative;
+  }
+
+  .p-absolute{
+    position: absolute;
+    left: -1rem;
+    bottom: -2rem;
+  }
+
+  .width-80-series {
+    width: 80%;
+    margin-top: 1rem;
+    margin: auto;
+  }
+
+  .wrap{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-blue{
+    border: none;
+    color: white;
+    background-color: #2F82F9;
+    padding: .8rem 3rem;
+    font-size: 1.2rem;
+  }
+
+  .cards{
+    width: calc(100%/6);
+    padding-top: 2rem;
+  }
+
+  .cards a {
+    text-decoration: none;
+  }
+
+  /* ////////////////////////////////////////////// */
+
+  .width-80-main{
+    width: 80%;
+    margin: auto;
+  }
+
+  .blue-row{
+    background-color: #2F82F9;
+    padding-top: .1rem;
+  }
+
+  .blue-row ul{
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .blue-row li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .blue-row img{
+    height: 40%;
+    margin-right: .5rem;
+  }
+
+  .payment{
+    width: 20%;
+  }
+
+  .blue-row span{
+    color: white;
+    font-size: 1rem;
+  }.single-cover{
+    position: absolute;
+    top: 16rem;
+    color: white;
+    background-color: #00A9D9;
+    text-align: center;
+  }
+
+  .single-cover p {
+    margin: 0;
+  }
+
+  .info{
+    padding: 8rem 0 4rem 0;
+  }
+
+  .green-box{
+    background-color: #55BA59;
+    color: white;
+    padding: .8rem;
+  }
+
+  .text-green{
+    color: #97DD66;
+  }
+
+  .linea{
+    border-left: 1px solid black;
+    margin: 0 1rem;
+  }
+
+  .gray-box{
+    background-color: #F6F6F6;
+    padding: 3rem 0 5rem 0;
+    border-top: 1px solid #E3E3E3;
+    font-size: .8rem;
+  }
