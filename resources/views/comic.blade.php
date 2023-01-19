@@ -3,7 +3,7 @@
 @section('main')
     <div class="width-80-main">
         <div class="single-cover">
-            <img src="{{ $single_comic['thumb'] }}" alt="">
+            <img src="{{ $comics['thumb'] }}" alt="">
             <p>View Gallery</p>
         </div>
     </div>
@@ -11,12 +11,12 @@
     <div class="width-80-main d-flex info">
         <div class="left-side col-7">
             <h3>
-                {{ $single_comic['title'] }}
+                {{ $comics['title'] }}
             </h3>
 
             <div class="green-box d-flex justify-content-between">
                 <h5>
-                    <span class="text-green">U.S. Price:</span> {{ $single_comic['price'] }}
+                    <span class="text-green">U.S. Price:</span> {{ $comics['price'] }}
                 </h5>
                 <div class="d-flex">
                     <h5 class="text-green">AVAILABLE</h5>
@@ -26,7 +26,7 @@
 
             </div>
             <p class="py-3">
-                {{ $single_comic['description'] }}
+                {{ $comics['description'] }}
             </p>
         </div>
 
@@ -49,7 +49,7 @@
                     <div class="d-flex py-2">
                         <div class="d-block col-3">Art by:</div>
                         <div class="text-primary font-small">
-                            {{-- @foreach ($single_comic['artists'] as $element)
+                            {{-- @foreach ($comics['artists'] as $element)
                                 {{ $element }}
                                 @if (!$loop->last)
                                 ,
@@ -63,7 +63,7 @@
                     <div class="d-flex py-2">
                         <div class="d-block col-3">Written by:</div>
                         <div class="text-primary font-small">
-                            {{-- @foreach ($single_comic['writers'] as $element)
+                            {{-- @foreach ($comics['writers'] as $element)
                                 {{ $element }}
                                 @if (!$loop->last)
                                 ,
@@ -81,17 +81,17 @@
 
                 <div class="d-flex py-3 border-bottom">
                     <div class="col-4">Series:</div>
-                    <div class="col-4 text-primary">{{ strtoupper($single_comic['series']) }}</div>
+                    <div class="col-4 text-primary">{{ strtoupper($comics['series']) }}</div>
                 </div>
 
                 <div class="d-flex py-3 border-bottom">
                     <div class="col-4">U.S. Price:</div>
-                    <div class="col-4">{{ $single_comic['price'] }}</div>
+                    <div class="col-4">{{ $comics['price'] }}</div>
                 </div>
 
                 <div class="d-flex py-3 border-bottom">
                     <div class="col-4">On Sale Date:</div>
-                    <div class="col-4">{{ date('M j Y', strtotime($single_comic['sale_date'])) }}</div>
+                    <div class="col-4">{{ date('M j Y', strtotime($comics['sale_date'])) }}</div>
                 </div>
             </div>
         </div>
