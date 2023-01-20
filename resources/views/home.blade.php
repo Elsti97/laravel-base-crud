@@ -3,7 +3,7 @@
 @section('main')
     <div class="width-80-series p-relative">
         <button class="button-blue p-absolute">
-            <a href="{{ route('comic.create') }}" class="text-white text-decoration-none">CURRENT SERIES</a>
+            <a href="{{ route('comic.create') }}" class="text-white text-decoration-none">ADD COMIC</a>
         </button>
     </div>
 
@@ -15,9 +15,21 @@
                         <div class="mb-3"> <img src="{{ $element['thumb'] }}"></div>
                         <div class="text-white mb-3">{{ $element['title'] }}</div>
                     </a>
-                    <a href="{{route('comic.edit', $element->id)}}">
-                        MODIFICA
-                    </a>
+                    <div class="d-flex">
+                        <a href="{{ route('comic.edit', $element->id) }}">
+                            <button class="btn btn-warning btn-sm me-4">
+                                MODIFICA
+                            </button>
+                        </a>
+                        <form action="{{ route('comic.destroy', $element->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-danger btn-sm" type="submit">
+                                ELIMINA
+                            </button>
+                        </form>
+                    </div>
+
                 </div>
             @endforeach
 
