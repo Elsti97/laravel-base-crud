@@ -1,9 +1,14 @@
 <nav class="space-between-header">
-    <img src="{{ asset('images/dc-logo.png') }}" alt="logo" class="logo-header">
+    <div class="d-flex align-items-center">
+        <a class="text-center" href="{{route('home')}}">
+            <img src="{{ asset('images/dc-logo.png') }}" alt="logo" class="logo-header">
+        </a>
+    </div>
+
     <div>
         <ul class="ul-header">
             <li><a href="#">CHARACTERS</a></li>
-            <li><a href="#" class="active">COMICS</a></li>
+            <li><a href="{{route('home')}}" class="active">COMICS</a></li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">TV</a></li>
             <li><a href="#">GAMES</a></li>
